@@ -30,10 +30,8 @@ export default function App() {
               </nav>
             </header>
           </div>
-        </section>
 
-        <section className={styles.container}>
-          <div>
+          <div className={styles.container}>
             <div>
               <h1>Your</h1>
               <img src={heroImage} alt="Image cannot be loaded" />
