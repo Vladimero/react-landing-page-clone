@@ -35,8 +35,198 @@ nav {
 
 .brandLogo {
   padding-right: 20px;
-  border-right: 1px solid rgba(84, 84, 84, 0.5);
+  border-right: 1px solid #54545480;
 }
 
 .container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.heroSection {
+  margin-top: 70px;
+  margin-bottom: 24px;
+  padding-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 40px;
+  font-weight: 300;
+  background-clip: text;
+  grid-column-gap: 1ch;
+  grid-row-gap: 1ch;
+  white-space: nowrap;
+}
+
+.imageConnect {
+  grid-column-gap: 1ch;
+  grid-row-gap: 1ch;
+  white-space: nowrap;
+  display: flex;
+}
+
+.imageContainer {
+  width: 123px;
+  height: 93px;
+  max-width: 123px;
+  flex: none;
+  position: relative;
+}
+
+.heroImage {
+  width: 185%;
+  position: absolute;
+  top: 100%;
+  bottom: auto;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+
+.heroH1 {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(
+    circle farthest-side at 45%,
+    #fff,
+    rgba(255, 255, 255, 0.43)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-bottom: 5px;
+}
+
+.subHeroText {
+  font-size: 24px;
+  margin-bottom: 46px;
+}
+
+.subHeroSection {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 46px;
+}
+
+.heroButton {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.buttonBorder {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  -webkit-backdrop-filter: blur(34px);
+  backdrop-filter: blur(34px);
+  color: #eeece7;
+  letter-spacing: 0.04em;
+  background-image: radial-gradient(circle closest-corner, #384794, #5162b7),
+    linear-gradient(#171717, #161616 25%);
+  border-radius: 16px;
+  align-items: center;
+  padding: 20px 48px;
+  font-family: Andale mono, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  transition: opacity 0.2s;
+  display: flex;
+  box-shadow: 0 0 30px rgba(113, 137, 255, 0.7);
+}
+
+.imageBackground {
+  max-width: 1088px;
+  margin: 112px auto 43px;
+  position: relative;
+}
+
+.hugeImage {
+  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.introducePTag {
+  max-width: 299px;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(
+    circle closest-corner,
+    #fff,
+    rgba(255, 255, 255, 0.5)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  font-family: Plus Jakarta Sans, sans-serif;
+}
+
+.logoList {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-top: 46px;
+  display: grid;
+  align-items: center;
+  max-width: 100%;
+  padding-top: 66px;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.emptyPlace {
+  width: 100%;
+  height: 1px;
+  max-width: 80rem;
+  background-image: radial-gradient(
+    circle closest-corner,
+    #565a5e,
+    rgba(39, 41, 43, 0.76)
+  );
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: auto;
+}
+
+.blur {
+  width: 100%;
+  height: 1px;
+  max-width: 521px;
+  background-image: linear-gradient(
+    to right,
+    rgba(217, 217, 217, 0),
+    #d9d9d9 50%,
+    rgba(217, 217, 217, 0)
+  );
+  padding-bottom: 0;
+  padding-right: 0;
+  position: absolute;
+  opacity: 0.4;
+  filter: blur(2px);
+}
+
+.headerFooterImage {
+  z-index: 0;
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
 }
