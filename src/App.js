@@ -16,97 +16,93 @@ import { ReactComponent as TheNewYorkTimesLogo } from './images/partner/theNewYo
 
 export default function App() {
   return (
-    <>
-      <main>
-        <section className={styles.topSection}>
-          <div>
-            <header>
-              <nav>
-                <div>
-                  <a href="/#" className={styles.brandLogo}>
-                    <Logo />
-                  </a>
-                </div>
-                <ul>
-                  <li>
-                    <a href="/#">Features</a>
-                  </li>
-                  <li>
-                    <a href="/#">Twitter</a>
-                  </li>
-                  <li>
-                    <a href="/#">Blog</a>
-                  </li>
-                </ul>
-              </nav>
-            </header>
-          </div>
-
-          <div className={styles.container}>
-            <div className={styles.heroSection}>
-              <div className={styles.imageConnect}>
-                <h1 className={styles.heroH1}>Your</h1>
-                <div className={styles.imageContainer}>
-                  <img
-                    src={aiImage}
-                    alt="Image cannot be loaded"
-                    className={styles.heroImage}
-                  />
-                </div>
-              </div>
+    <main>
+      <section className={styles.topSection}>
+        <div>
+          <header>
+            <nav>
               <div>
-                <h1 className={styles.heroH1}>knowledge assistant</h1>
-              </div>
-            </div>
-
-            <div className={styles.subHeroSection}>
-              <p className={styles.subHeroText}>
-                Get ready-to-use answers from all your knowledge <br /> and quit
-                manual organization for good.
-              </p>
-              <div className={styles.heroButton}>
-                <a href="/#" alt="not shown" className={styles.buttonBorder}>
-                  GET STARTED FOR FREE
-                  <Direction />
+                <a href="/#" className={styles.brandLogo}>
+                  <Logo />
                 </a>
               </div>
-            </div>
+              <ul>
+                <li>
+                  <a href="/#">Features</a>
+                </li>
+                <li>
+                  <a href="/#">Twitter</a>
+                </li>
+                <li>
+                  <a href="/#">Blog</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </div>
 
-            <div className={styles.imageBackground}>
-              <img
-                src={macInterface}
-                alt="Image cannot be loaded"
-                className={styles.hugeImage}
-              />
-              <p className={styles.introducePTag}>
-                Loved by professionals from <br /> companies such as
-              </p>
+        <div className={styles.container}>
+          <div className={styles.heroSection}>
+            <div className={styles.imageConnect}>
+              <h1 className={styles.heroH1}>Your</h1>
+              <div className={styles.imageContainer}>
+                <img
+                  src={aiImage}
+                  alt="cannot be loaded"
+                  className={styles.heroImage}
+                />
+              </div>
             </div>
+            <div>
+              <h1 className={styles.heroH1}>knowledge assistant</h1>
+            </div>
+          </div>
 
-            <div className={styles.logoList}>
-              <BainCompanyLogo />
-              <CreditSuisseLogo />
-              <GartnerLogo />
-              <HarvardLogo />
-              <McKinseyLogo />
-              <MorgenStanleyLogo />
-              <MorningStartLogo />
-              <TheNewYorkTimesLogo />
-              <div className={styles.emptyPlace}>
-                <div className={styles.blur}>
-                  <img
-                    src={footerImage}
-                    alt="not loaded"
-                    className={styles.headerFooterImage}
-                  />
-                </div>
+          <div className={styles.subHeroSection}>
+            <p className={styles.subHeroText}>
+              Get ready-to-use answers from all your knowledge <br /> and quit
+              manual organization for good.
+            </p>
+            <div className={styles.heroButton}>
+              <a href="/#" alt="not shown" className={styles.buttonBorder}>
+                GET STARTED FOR FREE
+                <Direction />
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.imageBackground}>
+            <img
+              src={macInterface}
+              alt="cannot be loaded"
+              className={styles.hugeImage}
+            />
+            <p className={styles.introducePTag}>
+              Loved by professionals from <br /> companies such as
+            </p>
+          </div>
+
+          <div className={styles.logoList}>
+            <BainCompanyLogo />
+            <CreditSuisseLogo />
+            <GartnerLogo />
+            <HarvardLogo />
+            <McKinseyLogo />
+            <MorgenStanleyLogo />
+            <MorningStartLogo />
+            <TheNewYorkTimesLogo />
+            <div className={styles.emptyPlace}>
+              <div className={styles.blur}>
+                <img
+                  src={footerImage}
+                  alt="not loaded"
+                  className={styles.headerFooterImage}
+                />
               </div>
             </div>
           </div>
-        </section>
-
-        <section></section>
-      </main>
-    </>
+        </div>
+      </section>
+    </main>
   );
 }
